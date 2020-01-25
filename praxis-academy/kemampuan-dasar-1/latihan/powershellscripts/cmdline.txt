@@ -1,0 +1,252 @@
+1. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::c96a:9313:65ef:e5f4%8
+   IPv4 Address. . . . . . . . . . . : 192.168.1.8
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::1%8
+
+                                       192.168.1.1
+
+2. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>ping google.com
+
+Pinging google.com [172.217.194.101] with 32 bytes of data:
+Reply from 172.217.194.101: bytes=32 time=64ms TTL=44
+Reply from 172.217.194.101: bytes=32 time=89ms TTL=44
+Reply from 172.217.194.101: bytes=32 time=57ms TTL=44
+Reply from 172.217.194.101: bytes=32 time=89ms TTL=44
+
+Ping statistics for 172.217.194.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 57ms, Maximum = 89ms, Average = 74ms
+
+3. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>arp /a
+
+Interface: 192.168.1.8 --- 0x8
+  Internet Address      Physical Address      Type
+  192.168.1.1           1c-18-4a-26-d4-90     dynamic
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+4. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>assoc .txt
+.txt=txtfile
+
+5. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>date /t
+24/01/20
+
+6. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>color 84
+
+7. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>color 1
+
+8. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>echo
+ECHO is on.
+
+9. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>Label
+Volume in drive D: is DATA
+Volume Serial Number is 4032-DBFB
+Volume label (32 characters, ENTER for none)?
+
+10. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>nbtstat /n
+
+Ethernet:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+
+Wi-Fi:
+Node IpAddress: [192.168.1.8] Scope Id: []
+
+                NetBIOS Local Name Table
+
+       Name               Type         Status
+    ---------------------------------------------
+    LAPTOP-K16PG108<20>  UNIQUE      Registered
+    LAPTOP-K16PG108<00>  UNIQUE      Registered
+    WORKGROUP      <00>  GROUP       Registered
+
+Local Area Connection* 1:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+
+Local Area Connection* 2:
+Node IpAddress: [0.0.0.0] Scope Id: []
+
+    No names in cache
+
+11. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>netcfg /s n
+
+Network Adapters
+-----------------
+
+pci\ven_10ec&dev_d723&subsys_8319103c Realtek RTL8723DE 802.11b/g/n PCIe Adapter
+
+pci\ven_10ec&dev_8168&subsys_85e0103c&rev_15 Realtek PCIe GbE Family Controller
+
+
+Network Protocols
+-----------------
+
+ms_rdma_ndk                Microsoft RDMA - NDK
+
+ms_tcpip                   Internet Protocol Version 4 (TCP/IPv4)
+
+ms_netbt                   WINS Client(TCP/IP) Protocol
+
+ms_implat                  Microsoft Network Adapter Multiplexor Protocol
+
+ms_ndiswanlegacy           Remote Access LEGACY NDIS WAN Driver
+
+ms_lldp                    Microsoft LLDP Protocol Driver
+
+ms_wanarp                  Remote Access IP ARP Driver
+
+ms_tcpip_tunnel            Internet Protocol (TCP/IP) - Tunnels
+
+ms_tcpip6_tunnel           Microsoft TCP/IP version 6 - Tunnels
+
+ms_tcpip6                  Internet Protocol Version 6 (TCP/IPv6)
+
+ms_rspndr                  Link-Layer Topology Discovery Responder
+
+ms_pppoe                   Point to Point Protocol Over Ethernet
+
+ms_wanarpv6                Remote Access IPv6 ARP Driver
+
+ms_netbt_smb               Message-oriented TCP/IP Protocol (SMB session)
+
+ms_ndisuio                 NDIS Usermode I/O Protocol
+
+ms_ndiswan                 Remote Access NDIS WAN Driver
+
+ms_lltdio                  Link-Layer Topology Discovery Mapper I/O Driver
+
+netvsc_vfpp                Microsoft NetVsc Failover VF Protocol
+
+ms_xboxgip                 Xbox Game Input Protocol Driver
+
+
+Network Services
+-----------------
+
+ms_netbios                 NetBIOS Interface
+
+ms_server                  File and Printer Sharing for Microsoft Networks
+
+ms_bridge                  Microsoft MAC Bridge
+
+ms_wfplwf_lower            WFP Native MAC Layer LightWeight Filter
+
+ms_vwifi                   @%windir%\System32\drivers\vwififlt.sys,-105
+
+ms_pacer                   QoS Packet Scheduler
+
+ms_wfplwf_upper            WFP 802.3 MAC Layer LightWeight Filter
+
+ms_nativewifip             NativeWiFi Filter
+
+ms_wfplwf_vswitch          Microsoft Windows Filtering Platform
+
+ms_ndiscap                 Microsoft NDIS Capture
+
+
+Network Clients
+-----------------
+
+ms_msclient                Client for Microsoft Networks
+
+12. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>Net print \\Production 35
+The syntax of this command is:
+
+NET
+    [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
+      HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
+      STATISTICS | STOP | TIME | USE | USER | VIEW ]
+
+13. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>pathping
+
+Usage: pathping [-g host-list] [-h maximum_hops] [-i address] [-n]
+                [-p period] [-q num_queries] [-w timeout]
+                [-4] [-6] target_name
+
+Options:
+    -g host-list     Loose source route along host-list.
+    -h maximum_hops  Maximum number of hops to search for target.
+    -i address       Use the specified source address.
+    -n               Do not resolve addresses to hostnames.
+    -p period        Wait period milliseconds between pings.
+    -q num_queries   Number of queries per hop.
+    -w timeout       Wait timeout milliseconds for each reply.
+    -4               Force using IPv4.
+    -6               Force using IPv6.
+
+14. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>path
+PATH=C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin
+
+15. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>mkdir tes
+
+D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>dir
+ Volume in drive D is DATA
+ Volume Serial Number is 4032-DBFB
+
+ Directory of D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts
+
+24/01/20  17:55    <DIR>          .
+24/01/20  17:55    <DIR>          ..
+24/01/20  17:06                 0 cmdline.txt
+24/01/20  17:55    <DIR>          tes
+               1 File(s)              0 bytes
+               3 Dir(s)  999.288.442.880 bytes free
+D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>rd /s tes
+tes, Are you sure (Y/N)? y
+
+16. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>time /t
+18:01
+
+17. D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>timeout /t 10
+
+Waiting for  1 seconds, press a key to continue ...
+
+18.D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>prompt $d$s$s$t$_$g
+
+24/01/20  18:04:25,55
+
+19.D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>dir
+ Volume in drive D is DATA
+ Volume Serial Number is 4032-DBFB
+
+ Directory of D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts
+
+24/01/20  17:59    <DIR>          .
+24/01/20  17:59    <DIR>          ..
+24/01/20  17:06                 0 cmdline.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  999.288.438.784 bytes free
+
+20.D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts>cd ..
+   D:\praxis-academy\kemampuan-dasar-1\latihan>

@@ -1,0 +1,1 @@
+Get-ChildItem -Path D:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\*.txt
